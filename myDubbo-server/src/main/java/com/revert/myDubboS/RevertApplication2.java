@@ -1,15 +1,14 @@
-package com.revert.kafka;
+package com.revert.myDubboS;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
-@SpringBootApplication(scanBasePackages = {"com.revert.kafka"})
+@SpringBootApplication(scanBasePackages = {"com.revert.myDubboS"})
 @EnableScheduling
-public class RevertApplication extends SpringBootServletInitializer {
+public class RevertApplication2 extends SpringBootServletInitializer {
     public static void main(String[] args) {
-        SpringApplication.run(RevertApplication.class,args);
-
+        SpringApplication.run(RevertApplication2.class,args);
     }
 }

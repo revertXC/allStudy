@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.time.LocalDateTime;
+import java.util.Hashtable;
+import java.util.Map;
 import java.util.Random;
 import java.util.UUID;
 import java.util.concurrent.CountDownLatch;
@@ -22,6 +24,12 @@ import java.util.concurrent.CountDownLatch;
 @RequestMapping("/api/v1/kafka")
 @RestController
 public class TestController {
+
+    public static void main(String[] args) {
+        Map a = new Hashtable();
+        a.remove(null);
+    }
+
 
     @Autowired
     private ProducerFatory producerFatory;
